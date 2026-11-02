@@ -129,3 +129,143 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+.intro-column p,
+.intro-column a {
+  font-size: 15.5px;
+  line-height: 1.55;
+}
+
+.section-header {
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section-header td {
+  padding: 10px;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.experience-list {
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.experience-logo {
+  width: 25%;
+  min-height: 80px;
+  padding: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.experience-logo img {
+  display: block;
+  width: 100%;
+  max-width: 150px;
+  max-height: 70px;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.experience-content {
+  width: 75%;
+  padding: 20px;
+  vertical-align: middle;
+}
+
+.experience-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.experience-title {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.experience-date {
+  flex: 0 0 auto;
+  margin: 0;
+  color: #555;
+  white-space: nowrap;
+}
+
+.experience-meta {
+  margin-top: 0;
+  color: #555;
+}
+
+.lab-visit-list {
+  margin: 0;
+  padding: 0 10px 14px;
+  list-style: none;
+}
+
+.lab-visit-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.lab-visit-list li:last-child {
+  border-bottom: 0;
+}
+
+.lab-visit-title {
+  display: inline;
+  font-weight: 700;
+}
+
+.lab-visit-meta {
+  display: inline;
+  margin-left: 8px;
+  color: #555;
+}
+
+.lab-visit-meta::before {
+  content: "· ";
+}
+
+@media (max-width: 600px) {
+  .experience-logo {
+    width: 18%;
+    padding: 10px;
+  }
+
+  .experience-content {
+    width: 82%;
+    padding: 10px;
+  }
+
+  .experience-heading {
+    display: block;
+  }
+
+  .experience-date {
+    margin-bottom: 4px;
+    white-space: normal;
+  }
+
+  .lab-visit-meta {
+    display: block;
+    margin-top: 3px;
+    margin-left: 0;
+  }
+
+  .lab-visit-meta::before {
+    content: "";
+  }
+}
